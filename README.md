@@ -1,6 +1,9 @@
 # VÍDEO
 -> 
 
+# DIAGRAMA DE CLASSES
+O Arquivo esta em .SVG na raiz do projeto
+
 # SCRIPT SQL
 O Arquivo esta em .TXT na raiz do projeto
 
