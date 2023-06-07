@@ -4,9 +4,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import jpags.domain.Produto;
+import jpags.domain.Pedido;
+import jpags.domain.PedidoStatus;
 
-public class AtualizarPedido {
+public class AtualizarProduto {
 
 	public static void main(String[] args) {
 
@@ -15,9 +16,9 @@ public class AtualizarPedido {
 
 		em.getTransaction().begin(); 
 
-		Produto produto = em.find(Produto.class, 1L);
+		Pedido pedido = em.find(Pedido.class, 1L);
 		
-		produto.setPreco(29);
+		pedido.setStatus(PedidoStatus.EM_ROTA);
 
 		em.getTransaction().commit();
 
